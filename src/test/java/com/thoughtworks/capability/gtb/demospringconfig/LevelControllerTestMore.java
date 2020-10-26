@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-@TestPropertySource("classpath:testLevelNumberMore.properties")
+@TestPropertySource(properties = {"levelNumber=2"})
 public class LevelControllerTestMore {
     @Autowired
     private MockMvc mockMvc;
